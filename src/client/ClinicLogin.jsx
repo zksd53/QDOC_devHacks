@@ -1,5 +1,5 @@
 import "../user/Login.css";
-import Login from "../user/login";
+import Login from "../user/Login";
 
 export default function ClinicLogin() {
     return (

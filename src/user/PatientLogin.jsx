@@ -1,5 +1,5 @@
 import "./Login.css";
-import Login from "./login";
+import Login from "./Login";
 
 export default function PatientLogin() {
     return (
