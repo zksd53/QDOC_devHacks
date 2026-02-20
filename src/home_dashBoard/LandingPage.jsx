@@ -14,7 +14,7 @@ export default function LandingPage() {
             </div>
 
             <div className="role-section">
-                <Link to="/patient" className="role-card">
+                <Link to="/patient-login" className="role-card">
                     <div className="role-icon">👤</div>
                     <h2>Continue as Patient</h2>
                     <p>Check immunization records.</p>

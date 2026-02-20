@@ -2,7 +2,7 @@ import React from 'react';
 import HomeTab from './HomeTab';
 import ProfileTab from './ProfileTab';
 import VaccinationTab from './VaccinationTab';
-import '../../App.css';
+import '../App.css';
 
 function PatientDashboard() {
     const [activeTab, setActiveTab] = React.useState('home');
@@ -58,4 +58,3 @@ function PatientDashboard() {
 }
 
 export default PatientDashboard;
-

@@ -178,4 +178,3 @@ function HomeTab({ setActiveTab }) {
 }
 
 export default HomeTab;
-
