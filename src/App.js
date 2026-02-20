@@ -5,13 +5,15 @@ import FirstTimeUser from "./user/first_time";
 import PatientDashboard from "./user/dashboard/PatientDashboard";
 import PatientLogin from "./user/PatientLogin";
 import ClinicLogin from "./client/ClinicLogin";
+import PatientSignup from "./user/PatientSignup";
 
 function App() {
     return (
         <div className="App">
             <Routes>
                 <Route path="/" element={<LandingPage />} />
-                <Route path="/patient-signup" element={<FirstTimeUser />} />
+                <Route path="/patient-signup" element={<PatientSignup />} />
+                <Route path="/patient-signup/details" element={<FirstTimeUser />} />
                 <Route path="/patient-login" element={<PatientLogin />} />
                 <Route path="/clinic" element={<h2>Clinic login here</h2>} />
                 <Route path="/clinic-login" element={<ClinicLogin />} />
