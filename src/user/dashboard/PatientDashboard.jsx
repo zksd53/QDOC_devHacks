@@ -2,44 +2,45 @@ import React from 'react';
 import HomeTab from './HomeTab';
 import ProfileTab from './ProfileTab';
 import VaccinationTab from './VaccinationTab';
+import '../../App.css';
 
 function PatientDashboard() {
     const [activeTab, setActiveTab] = React.useState('home');
 
     return (
-        <div className="min-h-screen bg-gray-50">
-            <div className="bg-white shadow-sm">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h1 className="text-2xl font-bold text-gray-900 py-4">Patient Dashboard</h1>
+        <div className="dashboard-container">
+            <div className="dashboard-header">
+                <div className="dashboard-content">
+                    <h1 className="dashboard-title">Patient Dashboard</h1>
                     
                     {/* Tab Navigation Buttons */}
-                    <div className="flex space-x-1 border-b border-gray-200">
+                    <div className="tab-navigation">
                         <button
                             onClick={() => setActiveTab('home')}
-                            className={`px-6 py-3 text-sm font-medium transition-colors ${
+                            className={`tab-button ${
                                 activeTab === 'home'
-                                    ? 'text-blue-600 border-b-2 border-blue-600'
-                                    : 'text-gray-500 hover:text-gray-700 hover:border-b-2 hover:border-gray-300'
+                                    ? 'tab-button-active'
+                                    : 'tab-button-inactive'
                             }`}
                         >
                             Home
                         </button>
                         <button
                             onClick={() => setActiveTab('profile')}
-                            className={`px-6 py-3 text-sm font-medium transition-colors ${
+                            className={`tab-button ${
                                 activeTab === 'profile'
-                                    ? 'text-blue-600 border-b-2 border-blue-600'
-                                    : 'text-gray-500 hover:text-gray-700 hover:border-b-2 hover:border-gray-300'
+                                    ? 'tab-button-active'
+                                    : 'tab-button-inactive'
                             }`}
                         >
                             Profile
                         </button>
                         <button
                             onClick={() => setActiveTab('vaccination')}
-                            className={`px-6 py-3 text-sm font-medium transition-colors ${
+                            className={`tab-button ${
                                 activeTab === 'vaccination'
-                                    ? 'text-blue-600 border-b-2 border-blue-600'
-                                    : 'text-gray-500 hover:text-gray-700 hover:border-b-2 hover:border-gray-300'
+                                    ? 'tab-button-active'
+                                    : 'tab-button-inactive'
                             }`}
                         >
                             Vaccination
@@ -49,7 +50,7 @@ function PatientDashboard() {
             </div>
 
             {/* Tab Content Area */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="dashboard-content tab-content-area">
                 {activeTab === 'home' && <HomeTab />}
                 {activeTab === 'profile' && <ProfileTab />}
                 {activeTab === 'vaccination' && <VaccinationTab />}
