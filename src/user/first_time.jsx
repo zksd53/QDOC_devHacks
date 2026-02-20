@@ -14,12 +14,6 @@ export default function FirstTimeUser() {
           <label htmlFor="user-role">Role:</label>
           <input type="text" id="user-role" name="role" placeholder="e.g. Provider, Admin" />
 
-          <label htmlFor="user-license">License number:</label>
-          <input type="text" id="user-license" name="licenseNumber" />
-
-          <label htmlFor="user-specialty">Specialty:</label>
-          <input type="text" id="user-specialty" name="specialty" />
-
           <div className="form-actions">
             <button type="submit">Save Profile</button>
           </div>

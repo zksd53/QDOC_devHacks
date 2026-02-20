@@ -2,7 +2,7 @@ import React from 'react';
 import HomeTab from './HomeTab';
 import ProfileTab from './ProfileTab';
 import VaccinationTab from './VaccinationTab';
-import '../../App.css';
+import '../App.css';
 
 function PatientDashboard() {
     const [activeTab, setActiveTab] = React.useState('home');
@@ -12,8 +12,6 @@ function PatientDashboard() {
             <div className="dashboard-header">
                 <div className="dashboard-content">
                     <h1 className="dashboard-title">Patient Dashboard</h1>
-                    
-                    {/* Tab Navigation Buttons */}
                     <div className="tab-navigation">
                         <button
                             onClick={() => setActiveTab('home')}
@@ -49,7 +47,6 @@ function PatientDashboard() {
                 </div>
             </div>
 
-            {/* Tab Content Area */}
             <div className="dashboard-content tab-content-area">
                 {activeTab === 'home' && <HomeTab />}
                 {activeTab === 'profile' && <ProfileTab />}
@@ -60,4 +57,3 @@ function PatientDashboard() {
 }
 
 export default PatientDashboard;
-
