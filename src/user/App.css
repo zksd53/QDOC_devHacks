@@ -4,23 +4,17 @@
 
 .dashboard-container {
     min-height: 100vh;
-    background-color: #f9fafb;
     display: flex;
 }
 
 .dashboard-sidebar {
     width: 240px;
-    background-color: #ffffff;
-    box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 0.05);
     padding: 24px 0;
     display: flex;
     flex-direction: column;
 }
 
 .dashboard-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #111827;
     padding: 0 24px 24px 24px;
     margin: 0;
     border-bottom: 1px solid #e5e7eb;
@@ -35,10 +29,6 @@
 
 .tab-button {
     padding: 12px 24px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-    background: none;
     border: none;
     cursor: pointer;
     text-align: left;
@@ -47,19 +37,9 @@
 }
 
 .tab-button-active {
-    color: #2563eb;
-    background-color: #eff6ff;
     border-left-color: #2563eb;
 }
 
-.tab-button-inactive {
-    color: #6b7280;
-}
-
-.tab-button-inactive:hover {
-    color: #374151;
-    background-color: #f9fafb;
-}
 
 .dashboard-main-content {
     flex: 1;
@@ -75,22 +55,14 @@
 }
 
 .home-welcome-card {
-    background-color: #ffffff;
-    border-radius: 8px;
     padding: 24px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .home-welcome-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #111827;
     margin: 0 0 8px 0;
 }
 
 .home-welcome-text {
-    font-size: 14px;
-    color: #6b7280;
     margin: 0;
 }
 
@@ -101,37 +73,21 @@
 }
 
 .home-stat-card {
-    background-color: #ffffff;
-    border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .home-stat-value {
-    font-size: 32px;
-    font-weight: 700;
-    color: #2563eb;
     margin-bottom: 8px;
 }
 
 .home-stat-value-small {
-    font-size: 18px;
-    font-weight: 600;
-    color: #2563eb;
     margin-bottom: 8px;
 }
 
-.home-stat-label {
-    font-size: 14px;
-    color: #6b7280;
-}
 
 .home-section-card {
-    background-color: #ffffff;
-    border-radius: 8px;
     padding: 24px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .home-section-header {
@@ -142,27 +98,15 @@
 }
 
 .home-section-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #111827;
     margin: 0;
 }
 
 .home-view-all-button {
-    background: none;
     border: none;
-    color: #2563eb;
-    font-size: 14px;
-    font-weight: 500;
     cursor: pointer;
     padding: 4px 8px;
-    transition: color 0.2s;
 }
 
-.home-view-all-button:hover {
-    color: #1d4ed8;
-    text-decoration: underline;
-}
 
 .home-vaccine-list {
     display: flex;
@@ -175,22 +119,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    border-radius: 6px;
     border-left: 4px solid;
 }
 
 .home-vaccine-item.home-vaccine-overdue {
-    background-color: #fef2f2;
     border-left-color: #dc2626;
 }
 
 .home-vaccine-item.home-vaccine-due-soon {
-    background-color: #fffbeb;
     border-left-color: #f59e0b;
 }
 
 .home-vaccine-item.home-vaccine-due {
-    background-color: #eff6ff;
     border-left-color: #2563eb;
 }
 
@@ -199,39 +139,14 @@
 }
 
 .home-vaccine-name {
-    font-size: 16px;
-    font-weight: 600;
-    color: #111827;
     margin-bottom: 4px;
 }
 
-.home-vaccine-date {
-    font-size: 14px;
-    color: #6b7280;
-}
 
 .home-vaccine-status {
     padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
-.home-status-overdue {
-    background-color: #fee2e2;
-    color: #991b1b;
-}
-
-.home-status-due-soon {
-    background-color: #fef3c7;
-    color: #92400e;
-}
-
-.home-status-due {
-    background-color: #dbeafe;
-    color: #1e40af;
-}
 
 .home-history-list {
     display: flex;
@@ -244,45 +159,24 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: #f9fafb;
-    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
 }
 
-.home-history-item:hover {
-    background-color: #f3f4f6;
-    transform: translateX(4px);
-}
 
 .home-history-info {
     flex: 1;
 }
 
 .home-history-vaccine {
-    font-size: 16px;
-    font-weight: 600;
-    color: #111827;
     margin-bottom: 4px;
 }
 
-.home-history-details {
-    font-size: 14px;
-    color: #6b7280;
-}
 
 .home-history-status {
-    font-size: 12px;
-    font-weight: 500;
-    color: #059669;
-    background-color: #d1fae5;
     padding: 4px 8px;
-    border-radius: 4px;
 }
 
 .home-empty-message {
-    color: #6b7280;
-    font-size: 14px;
     text-align: center;
     padding: 24px;
     margin: 0;
