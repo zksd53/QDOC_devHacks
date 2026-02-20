@@ -21,7 +21,7 @@ export default function LandingPage() {
                     <span className="role-button">I'm a Patient</span>
                 </Link>
 
-                <Link to="/clinic" className="role-card">
+                <Link to="/clinic-login" className="role-card">
                     <div className="role-icon">🏥</div>
                     <h2>Continue as Clinic</h2>
                     <p>Manage patients and clinic operations efficiently.</p>
