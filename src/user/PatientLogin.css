@@ -1,0 +1,127 @@
+/* Page Layout */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f4f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Card Styling */
+.login-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+/* Title & Subtext */
+.login-card h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.login-subtext {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #475569;
+}
+
+/* Form Styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.login-form input {
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.login-form input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    outline: none;
+}
+
+/* Login Button (Link Styled as Button) */
+.login-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none; /* removes underline for Link */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.login-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Disabled Button */
+.login-btn.disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Sign-up link */
+.signup-prompt {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #475569;
+    text-align: center;
+}
+
+.signup-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .login-card h1 {
+        font-size: 1.75rem;
+    }
+}
