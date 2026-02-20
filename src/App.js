@@ -1,27 +1,13 @@
 import "./user/App.css";
-import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LandingPage from "./home_dashBoard/LandingPage";
 import FirstTimeUser from "./user/first_time";
 import PatientDashboard from "./user/dashboard/PatientDashboard";
 import PatientLogin from "./user/PatientLogin";
 
 function App() {
-    const location = useLocation();
-    const isDashboard = location.pathname === "/patient/dashboard" || location.pathname === "/user/dashboard";
-
     return (
         <div className="App">
-            {!isDashboard && (
-                <>
-                    <h1>Welcome to the clinic</h1>
-                    <nav>
-                        <Link to="/patient">Go for user here</Link> |{" "}
-                        <Link to="/clinic">Go for clinic here</Link> |{" "}
-                        <Link to="/patient/dashboard">Patient Dashboard</Link>
-                    </nav>
-                </>
-            )}
-
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/patient-signup" element={<FirstTimeUser />} />
