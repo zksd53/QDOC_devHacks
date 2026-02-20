@@ -7,7 +7,7 @@ import PatientLogin from "./user/PatientLogin";
 
 function App() {
     const location = useLocation();
-    const isDashboard = location.pathname === "/patient/dashboard";
+    const isDashboard = location.pathname === "/patient/dashboard" || location.pathname === "/user/dashboard";
 
     return (
         <div className="App">
@@ -28,6 +28,7 @@ function App() {
                 <Route path="/patient-login" element={<PatientLogin />} />
                 <Route path="/clinic" element={<h2>Clinic login here</h2>} />
                 <Route path="/patient/dashboard" element={<PatientDashboard />} />
+                <Route path="/user/dashboard" element={<PatientDashboard />} />
             </Routes>
         </div>
     );
