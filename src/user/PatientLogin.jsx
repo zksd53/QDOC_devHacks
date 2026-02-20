@@ -6,7 +6,6 @@ export default function PatientLogin() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    // Enable login only if both fields are filled
     const isFormValid = email && password;
 
     return (

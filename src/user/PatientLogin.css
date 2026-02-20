@@ -1,4 +1,4 @@
-/* Page Layout */
+
 .login-container {
     min-height: 100vh;
     display: flex;
@@ -7,8 +7,6 @@
     background: #f0f4f8;
     font-family: Arial, sans-serif;
 }
-
-/* Card Styling */
 .login-card {
     background: white;
     padding: 40px 30px;
@@ -27,7 +25,6 @@
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
 }
 
-/* Title & Subtext */
 .login-card h1 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -40,7 +37,6 @@
     color: #475569;
 }
 
-/* Form Styling */
 .login-form {
     display: flex;
     flex-direction: column;
@@ -70,7 +66,6 @@
     outline: none;
 }
 
-/* Login Button (Link Styled as Button) */
 .login-btn {
     display: inline-block;
     text-align: center;
@@ -80,7 +75,7 @@
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
-    text-decoration: none; /* removes underline for Link */
+    text-decoration: none; 
     cursor: pointer;
     transition: background-color 0.2s ease;
     width: 100%;
@@ -90,14 +85,12 @@
     background-color: #2563eb;
 }
 
-/* Disabled Button */
 .login-btn.disabled {
     background-color: #94a3b8;
     cursor: not-allowed;
     pointer-events: none;
 }
 
-/* Sign-up link */
 .signup-prompt {
     margin-top: 20px;
     font-size: 0.95rem;
@@ -115,7 +108,6 @@
     text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 480px) {
     .login-card {
         padding: 30px 20px;
