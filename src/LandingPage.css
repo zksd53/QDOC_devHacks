@@ -1,0 +1,100 @@
+.landing-container {
+    min-height: 100vh;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.landing-hero {
+    max-width: 700px;
+}
+
+.landing-title {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.landing-description {
+    font-size: 1.1rem;
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+.landing-subtext {
+    font-weight: 600;
+    margin-top: 10px;
+    color: #334155;
+}
+
+.role-section {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.role-card {
+    background: white;
+    text-decoration: none;
+    color: inherit;
+    width: 300px;
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.role-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.role-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.role-card h2 {
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.role-card p {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.role-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.role-button:hover {
+    background-color: #2563eb;
+}
+
+@media (max-width: 768px) {
+    .landing-title {
+        font-size: 2rem;
+    }
+
+    .role-section {
+        gap: 20px;
+    }
+}

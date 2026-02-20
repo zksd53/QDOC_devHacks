@@ -1,5 +1,6 @@
 import "./App.css";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
+import LandingPage from "./LandingPage";
 import PatientDashboard from "./user/dashboard/PatientDashboard";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             )}
 
             <Routes>
+                <Route path="/" element={<LandingPage />} />
                 <Route path="/user" element={<h2>User login details here</h2>} />
                 <Route path="/clinic" element={<h2>Clinic login here</h2>} />
                 <Route path="/user/dashboard" element={<PatientDashboard />} />
