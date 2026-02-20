@@ -5,6 +5,7 @@ import "./PatientLogin.css";
 export default function PatientLogin() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [showPassword, setShowPassword] = useState(false);
 
     const isFormValid = email && password;
 
@@ -26,14 +27,22 @@ export default function PatientLogin() {
                     />
 
                     <label htmlFor="password">Password</label>
-                    <input
-                        type="password"
-                        id="password"
-                        placeholder="••••••••"
-                        required
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
+                    <div className="password-wrapper">
+                        <input
+                            type={showPassword ? "text" : "password"}
+                            id="password"
+                            placeholder="••••••••"
+                            required
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                        <span
+                            className="toggle-password"
+                            onClick={() => setShowPassword((prev) => !prev)}
+                        >
+                            {showPassword ? "🙈" : "👁️"}
+                        </span>
+                    </div>
 
                     {isFormValid ? (
                         <Link to="/patient/dashboard" className="login-btn">
