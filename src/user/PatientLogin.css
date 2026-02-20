@@ -115,6 +115,26 @@
     text-decoration: underline;
 }
 
+/* Wrap password input + icon */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    flex: 1;
+    padding-right: 40px; /* space for the eye icon */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
 /* Responsive */
 @media (max-width: 480px) {
     .login-card {
