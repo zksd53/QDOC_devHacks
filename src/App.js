@@ -5,22 +5,8 @@ import FirstTimeUser from "./user/first_time";
 import PatientDashboard from "./user/dashboard/PatientDashboard";
 
 function App() {
-    const location = useLocation();
-    const isDashboard = location.pathname === "/user/dashboard";
-
     return (
         <div className="App">
-            {!isDashboard && (
-                <>
-                    <h1>Welcome to the clinic</h1>
-                    <nav>
-                        <Link to="/user">Go for user here</Link> |{" "}
-                        <Link to="/clinic">Go for clinic here</Link> |{" "}
-                        <Link to="/user/dashboard">Patient Dashboard</Link>
-                    </nav>
-                </>
-            )}
-
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/patient" element={<FirstTimeUser />} />
