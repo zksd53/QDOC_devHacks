@@ -9,6 +9,7 @@ import PatientLogin from './user/PatientLogin';
 import ClinicLogin from './client/ClinicLogin';
 import PatientSignup from './user/signup';
 import ClinicSignup from './client/signup';
+import ClientDashboard from './client/client_dashBoard/ClientDashboard';
 
 function FirstTimeAccessGate({ storageKey, fallbackPath, children }) {
     const allowed = sessionStorage.getItem(storageKey) === 'true';
@@ -63,6 +64,8 @@ function App() {
                 <Route path="/patient/dashboard" element={<PatientDashboard />} />
                 <Route path="/user/dashboard" element={<PatientDashboard />} />
                 <Route path="/dashboard" element={<PatientDashboard />} />
+                <Route path="/clinic/dashboard" element={<ClientDashboard />} />
+                <Route path="/client/dashboard" element={<ClientDashboard />} />
             </Routes>
         </div>
     );

@@ -35,7 +35,7 @@ export default function ClinicLogin() {
                     />
 
                     {isFormValid ? (
-                        <Link to="/clinic-signup" className="login-btn">
+                        <Link to="/clinic/dashboard" className="login-btn">
                             Continue
                         </Link>
                     ) : (

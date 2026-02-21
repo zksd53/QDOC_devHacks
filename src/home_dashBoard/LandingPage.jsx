@@ -67,7 +67,7 @@ export default function LandingPage() {
                     <span className="brand-name">VaxSheild</span>
                 </div>
                 <Link to="/dashboard" className="get-started-btn">
-                    DashBoard
+                    Get Started
                 </Link>
             </header>
 
