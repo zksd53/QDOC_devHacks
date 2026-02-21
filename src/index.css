@@ -90,6 +90,81 @@ body {
   background: #0b5f59;
 }
 
+.list-input-wrap {
+  width: 100%;
+}
+
+.list-input-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+
+.small-btn {
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.small-btn:hover {
+  background: #1d4ed8;
+}
+
+.small-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.danger-btn {
+  background: #ef4444;
+}
+
+.danger-btn:hover {
+  background: #dc2626;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: #f8fafc;
+  font-size: 13px;
+}
+
+.tag-remove {
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.vax-history {
+  display: grid;
+  gap: 10px;
+}
+
+.vax-row {
+  display: grid;
+  grid-template-columns: 1.6fr 0.7fr auto;
+  gap: 8px;
+}
+
 @media (max-width: 640px) {
   .form-card {
     padding: 18px;
@@ -111,5 +186,8 @@ body {
   .form-actions button {
     width: 100%;
   }
-}
 
+  .vax-row {
+    grid-template-columns: 1fr;
+  }
+}
