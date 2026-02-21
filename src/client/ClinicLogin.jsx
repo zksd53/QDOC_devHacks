@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./PatientLogin.css";
+import "../user/PatientLogin.css";
 
-export default function PatientLogin() {
+export default function ClinicLogin() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -10,24 +10,24 @@ export default function PatientLogin() {
     return (
         <div className="login-container">
             <div className="login-card">
-                <h1>Patient Login</h1>
-                <p className="login-subtext">Enter your email and password to continue.</p>
+                <h1>Clinic Login</h1>
+                <p className="login-subtext">Enter clinic credentials to continue.</p>
 
                 <form className="login-form" onSubmit={(e) => e.preventDefault()}>
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="clinic-email">Email</label>
                     <input
                         type="email"
-                        id="email"
-                        placeholder="you@example.com"
+                        id="clinic-email"
+                        placeholder="clinic@example.com"
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
 
-                    <label htmlFor="password">Password</label>
+                    <label htmlFor="clinic-password">Password</label>
                     <input
                         type="password"
-                        id="password"
+                        id="clinic-password"
                         placeholder="••••••••"
                         required
                         value={password}
@@ -35,18 +35,18 @@ export default function PatientLogin() {
                     />
 
                     {isFormValid ? (
-                        <Link to="/patient/dashboard" className="login-btn">
-                            Log In
+                        <Link to="/clinic-signup" className="login-btn">
+                            Continue
                         </Link>
                     ) : (
-                        <div className="login-btn disabled">Log In</div>
+                        <div className="login-btn disabled">Continue</div>
                     )}
                 </form>
 
                 <p className="signup-prompt">
-                    Don’t have an account?{" "}
-                    <Link to="/patient-signup" className="signup-link">
-                        Sign Up
+                    New clinic account?{" "}
+                    <Link to="/clinic-signup" className="signup-link">
+                        Set Up Profile
                     </Link>
                 </p>
             </div>
